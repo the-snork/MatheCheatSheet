@@ -799,9 +799,13 @@ Es sei eine Reihe $\sum_{i=0}^{\infty} a_i$ gegeben. So ist diese (absolut) Konv
     Majorantenkriterium         & siehe \ref{minorantenkriterium} \\
     Minorantenkriterium         & siehe \ref{majorantenkriterium} \\
 \end{tablebox}
-\begin{tablebox}{lll}
-    $q < 1 \Rightarrow$ Reihe konvergiert & $q > 1 \Rightarrow$ Reihe divergiert & $q = 1 $ keine Aussage möglich!
-\end{tablebox}
+
+\begin{itemize}
+	\item $q < 1 \Rightarrow$ Reihe konvergiert  
+	\item $q > 1 \Rightarrow$ Reihe divergiert 
+	\item $q = 1 $ Aussage unmöglich!
+\end{itemize}
+	
 \end{sectionbox}
 
 
@@ -1020,17 +1024,12 @@ So lässt sich das Integral durch Substitution vereinfachen und das Ergebnis zur
 
 \subsection{Partielle Integration}
 
-    \begin{align*}
-        \int f(x) * g(x) dx
-    \end{align*}
-    
-Gegeben sei ein Integral mit den Funktionen f(x) und g(x). Bei der Substitution setzt man nun eine der beiden Funktionen als Abgeleitet vorraus und Integriert diese. Im folgenden wird f(x) als abgeleitet gesetzt. Somit ist $h'(x) = f(x)$ und $h(x) = \int f(x)$.
+	Es seien $f,g:[a,b]\rightarrow \mathbb{R}$ stetig differenzierbare Funktionen.
+	Dann gilt:
+	
+	$\mathbf{\int f'(x) \cdot g(x) dx = f(x)\cdot g(x) - \int f(x) \cdot g'(x) dx}$
+	
 
-    \begin{align*}
-        \int h'(x) * g(x) dx = h(x) \cdot g(x) - \int g'(x) \cdot h(x) dx
-    \end{align*}
-
-Nicht immer ist der erste Ansatz zielführend.
 
 %Zusatz von Juliane 
 \subsection{Anwendungen}
